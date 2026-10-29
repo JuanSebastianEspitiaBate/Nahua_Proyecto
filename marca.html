@@ -28,9 +28,10 @@
     <nav class="main-nav" aria-label="Navegación principal">
       <ul>
         <li><a href="index.html">Inicio</a></li>
+        <li><a href="historia.html">Sobre nosotros</a></li>
         <li><a href="colecciones.html">Colecciones</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
         <li><a href="sostenibilidad.html">Sostenibilidad</a></li>
-        <li><a href="historia.html">Nuestra historia</a></li>
         <li><a href="marca.html" aria-current="page">Manual de marca</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
@@ -46,7 +47,14 @@
   </div>
 </section>
 
-<section class="section">
+<nav class="toc" aria-label="Contenido del manual">
+  <div class="container">
+    <a href="#sec-1">Logotipo</a><a href="#sec-2">Usos</a><a href="#sec-3">Paleta</a><a href="#sec-4">Tipografía</a>
+    <a href="#sec-5">Brief</a><a href="#sec-6">Recursos</a><a href="#sec-7">Piezas gráficas</a><a href="#sec-8">Video promocional</a><a href="#sec-9">Elevator pitch</a>
+  </div>
+</nav>
+
+<section id="sec-1" class="section">
   <div class="container">
     <div class="section-head center reveal"><span class="eyebrow">01 · Logotipo</span><h2>El emblema de Nahua</h2>
       <p class="lead">Un sol de arcilla enmarcado en dorado reúne los símbolos del viaje con raíces.</p></div>
@@ -67,7 +75,7 @@
   </div>
 </section>
 
-<section class="section section--cielo">
+<section id="sec-2" class="section section--cielo">
   <div class="container">
     <div class="section-head center reveal"><span class="eyebrow">02 · Usos del logotipo</span><h2>Dónde y cómo usarlo</h2></div>
     <div class="logo-uses">
@@ -82,7 +90,7 @@
   </div>
 </section>
 
-<section class="section section--papel">
+<section id="sec-3" class="section section--papel">
   <div class="container">
     <div class="section-head center reveal"><span class="eyebrow">03 · Paleta oficial</span><h2>Colores de marca</h2>
       <p class="lead">Proporción sugerida: 60% Cielo Neutro · 30% Tierra Ancestral y Arcilla Cálida · 10% Sol Dorado y Hoja Sagrada.</p></div>
@@ -96,7 +104,7 @@
   </div>
 </section>
 
-<section class="section">
+<section id="sec-4" class="section">
   <div class="container">
     <div class="section-head center reveal"><span class="eyebrow">04 · Tipografía</span><h2>Elegante y artesanal</h2></div>
     <div class="grid-2">
@@ -106,7 +114,7 @@
   </div>
 </section>
 
-<section class="section section--cielo">
+<section id="sec-5" class="section section--cielo">
   <div class="container">
     <div class="section-head center reveal"><span class="eyebrow">05 · Brief de marca</span><h2>Resumen del brief</h2></div>
     <dl class="brief reveal">
@@ -122,7 +130,7 @@
   </div>
 </section>
 
-<section class="section section--papel">
+<section id="sec-6" class="section section--papel">
   <div class="container">
     <div class="section-head center reveal"><span class="eyebrow">06 · Recursos</span><h2>Descargas</h2></div>
     <div class="downloads">
@@ -133,7 +141,7 @@
   </div>
 </section>
 
-<section class="section section--cielo">
+<section id="sec-7" class="section section--cielo">
   <div class="container">
     <div class="section-head center reveal"><span class="eyebrow">07 · Piezas gráficas</span><h2>Afiche y tarjeta de presentación</h2>
       <p class="lead">Aplicaciones de la identidad en piezas reales de comunicación.</p></div>
@@ -157,6 +165,37 @@
     </div>
   </div>
 </section>
+
+<section class="section section--tierra" id="sec-8">
+  <div class="container split">
+    <div class="reveal">
+      <span class="eyebrow">08 · Video promocional</span>
+      <h2>Nahua en movimiento</h2>
+      <p class="lead" style="margin-top:14px">Pieza audiovisual de la marca para redes sociales y para la web. Formato vertical pensado para Instagram, TikTok y Reels.</p>
+    </div>
+    <div class="phone reveal">
+        <video controls preload="metadata" playsinline poster="imagenes/video-portada.jpg" aria-label="Video promocional de Nahua">
+          <source src="videos/nahua-corporativo.mp4" type="video/mp4">
+          Tu navegador no puede reproducir el video. <a href="videos/nahua-corporativo.mp4">Descárgalo aquí</a>.
+        </video>
+      </div>
+  </div>
+</section>
+
+<section class="section" id="sec-9">
+  <div class="container">
+    <div class="section-head center reveal"><span class="eyebrow">09 · Elevator pitch</span><h2>Nahua en 30 segundos</h2>
+      <p class="lead">El discurso breve con el que presentamos la marca a un inversionista, un aliado o un cliente.</p></div>
+    <div class="pitch">
+      <article class="pitch-step reveal"><span>El problema</span><p>Los accesorios de viaje se parecen todos, y casi ninguno cuenta de dónde viene ni a quién honra.</p></article>
+      <article class="pitch-step reveal"><span>La solución</span><p>Nahua crea maletas, mochilas y billeteras inspiradas en las culturas ancestrales de América Latina.</p></article>
+      <article class="pitch-step reveal"><span>El diferencial</span><p>Materiales reciclados y orgánicos, diseños con historia y un 1% de las ventas para comunidades.</p></article>
+      <article class="pitch-step reveal"><span>La meta</span><p>Llegar a 500.000 viajeros en 10 países de América Latina en 2030.</p></article>
+    </div>
+    <blockquote class="pitch-quote reveal">“Soy Juan Sebastián Espitia Bate, fundador de Nahua. Creamos accesorios que viajan con raíces. Nahua: viaja con respeto, viaja con historia.”</blockquote>
+  </div>
+</section>
+
 </main>
 <footer class="site-footer">
   <div class="container footer-top">
@@ -172,9 +211,10 @@
       <h4>Enlaces rápidos</h4>
       <ul>
         <li><a href="index.html">Inicio</a></li>
+        <li><a href="historia.html">Sobre nosotros</a></li>
         <li><a href="colecciones.html">Colecciones</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
         <li><a href="sostenibilidad.html">Sostenibilidad</a></li>
-        <li><a href="historia.html">Nuestra historia</a></li>
         <li><a href="marca.html">Manual de marca</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
