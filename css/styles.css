@@ -373,6 +373,45 @@ h3 { font-size: 1.5rem; }
 @media (max-width: 1020px) { .timeline { grid-template-columns: 1fr 1fr; } .timeline::before { display: none; } .timeline li::before { display: none; } }
 @media (max-width: 760px) { .timeline, .pieces { grid-template-columns: 1fr; } .author { flex-direction: column; text-align: center; } .specs div { grid-template-columns: 1fr; gap: 0; } }
 
+
+/* Video, índice, servicios y pitch */
+.phone { width: min(100%, 300px); aspect-ratio: 9 / 16; margin-inline: auto; border: 9px solid var(--noche); border-radius: 34px; overflow: hidden; background: #000; box-shadow: 0 24px 60px rgba(0, 0, 0, .45); }
+.phone video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.section--tierra .phone { border-color: var(--sol); }
+.toc { background: var(--papel); border-bottom: 1px solid var(--cielo); position: sticky; top: 79px; z-index: 50; }
+.toc .container { display: flex; gap: 8px; overflow-x: auto; padding-block: 12px; scrollbar-width: thin; }
+.toc a { white-space: nowrap; text-decoration: none; font-size: .74rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 8px 16px; border-radius: 999px; border: 2px solid var(--cielo); transition: all .25s; }
+.toc a:hover { background: var(--tierra); color: var(--cielo); border-color: var(--tierra); }
+.service { position: relative; padding-top: 44px; }
+.service-ico { position: absolute; top: -20px; left: 28px; width: 42px; height: 42px; border-radius: 50%; background: var(--sol); color: var(--tierra); display: grid; place-items: center; font-size: 1.1rem; box-shadow: var(--shadow); }
+.service-price { display: block; margin-top: 14px; color: var(--arcilla); font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; }
+.pitch { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; counter-reset: p; }
+.pitch-step { background: var(--papel); border-radius: var(--radius); padding: 28px 24px; box-shadow: var(--shadow); border-top: 5px solid var(--arcilla); counter-increment: p; }
+.pitch-step span { display: block; font-family: var(--font-title); font-size: 1.4rem; font-weight: 700; margin-bottom: 8px; }
+.pitch-step span::before { content: "0" counter(p) " · "; color: var(--arcilla); }
+.pitch-quote { font-family: var(--font-title); font-size: clamp(1.3rem, 2.6vw, 1.9rem); font-style: italic; text-align: center; max-width: 34ch; margin: 40px auto 0; line-height: 1.35; }
+.main-nav a { padding: 10px 11px; font-size: .74rem; letter-spacing: .08em; }
+@media (max-width: 1020px) { .pitch { grid-template-columns: 1fr 1fr; } .toc { top: 76px; } }
+@media (max-width: 760px) { .pitch { grid-template-columns: 1fr; } }
+
+
+/* Páginas con texto centrado (Sobre nosotros y Manual de marca) */
+.centrado main { text-align: center; }
+.centrado .lead, .centrado .quote { margin-inline: auto; }
+.centrado .checklist { justify-items: center; }
+.centrado .checklist li { padding-left: 0; }
+.centrado .checklist li::before { position: static; margin-right: 8px; }
+.centrado .timeline li::before { left: 50%; transform: translateX(-50%); }
+.centrado .author { flex-direction: column; text-align: center; border-left: 0; border-top: 6px solid var(--sol); }
+.centrado .download { justify-content: center; text-align: center; }
+.centrado .brief-row dt, .centrado .brief-row dd { text-align: center; }
+.centrado .toc .container { justify-content: center; }
+/* Pitch */
+.pitch { grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+.pitch-text { background: var(--papel); border-radius: var(--radius); padding: clamp(28px, 4vw, 52px); box-shadow: var(--shadow); border-top: 5px solid var(--sol); max-width: 860px; margin: 0 auto; }
+.pitch-text p { font-family: var(--font-title); font-size: clamp(1.2rem, 2.2vw, 1.6rem); line-height: 1.5; margin-top: 14px; }
+.tips { list-style: none; max-width: 760px; margin: 36px auto 0; display: grid; gap: 10px; }
+.tips li { background: var(--cielo); border-radius: 10px; padding: 12px 18px; }
 /* 11. ANIMACIONES (CSS puro) ---------------------------------------------- */
 @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
 @keyframes rise { from { opacity: 0; transform: translateY(32px); } to { opacity: 1; transform: none; } }
